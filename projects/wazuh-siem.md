@@ -31,7 +31,7 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
 - Part 2:
   - Connect to the instance.
     - Use the following command to connect to the instance. 
-      - "ssh -i ~/<key-pair-file.pem> ubuntu@(instancepublicIP>)"
+      - "ssh -i ~/<key-pair-file.pem> ubuntu@(<instancepublicIP>)"
         - Note: unless you have a elasticIP provisioned and assigned to the instance, the public IP will change each time so you'll need to update your command each time.
 
     - You can also configure a ssh config profile to make connecting to the instance easier but as mentioned above, if the publicIP changes each time you'll need to update the config file to match the changed IP.
