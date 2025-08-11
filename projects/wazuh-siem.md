@@ -31,7 +31,7 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
 - Part 2:
   - Connect to the instance.
     - Use the following command to connect to the instance. 
-      - "ssh -i ~/<key-pair-file.pem> ubuntu@(<instancepublicIP>)"
+      - "ssh -i ~/<key-pair-file.pem> ubuntu@(instancepublicIP)"
         - Note: unless you have a elasticIP provisioned and assigned to the instance, the public IP will change each time so you'll need to update your command each time.
 
     - You can also configure a ssh config profile to make connecting to the instance easier but as mentioned above, if the publicIP changes each time you'll need to update the config file to match the changed IP.
@@ -51,10 +51,10 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
   - Perform updates and upgrades to the instance.
     - Use the following commands to update and upgrade. Additionally, install the git package as well for expanded configuration control.
       - "sudo apt update && sudo apt upgrade -y" - performs update and upgrades system to most recent version.
-        - _personal screenshot removed for security purposes._
+        - **_personal screenshot removed for security purposes._**
 
       - "sudo apt install git curl unzip htop net-tools ufw -y" - allows you to use git to manage code on the instance.
-        - _personal screenshot removed for security purposes._
+        - **_personal screenshot removed for security purposes._**
 
 
   - Personal Notes:
@@ -70,7 +70,7 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
     - You'll be provided with login credentials, be sure to store these somewhere safe (eg: password manager)
       - Access the dashboard insterface using the ip from the server: "https://(wazuh-server-publicIP)"
         - Note this is dynamic same as when starting the server up.
-        - _personal screenshot removed for security purposes._
+        - **_personal screenshot removed for security purposes._**
 
    
 - Part 4:
@@ -89,7 +89,7 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
           - Provide a name for the agent host.
         - Configure the agent:
           - Find the agent file in the folder: "C:\Program Files (x86)\ossec-agent\ossec.conf" and review the server block. It should look something like this:
-            - _personal screenshot removed for security purposes._
+            - **_personal screenshot removed for security purposes._**
             - If not, update the block appropriately.
         - Use CMD or Powershell as Admin and run the following command:
           - "sc start WazuhSvc"
@@ -97,13 +97,13 @@ Notes for installing Wazuh SIEM on AWS EC2 Ubuntu instance.
          
   - Personal Notes:
     - When going to install the Ubuntu version of the agent I ran into the following error:
-      - _personal screenshot removed for security purposes._
-      - _personal screenshot removed for security purposes._
+      - **_personal screenshot removed for security purposes._**
+      - **_personal screenshot removed for security purposes._**
       - I ran the command twice and received the same error, I'm guessing this is likely due to a corrupted installation.
       - I decided to remove the agent completed and perform a new/clean install:
-        - personal screenshot removed for security purposes.
+        - _**personal screenshot removed for security purposes.**_
       - Followed by verifying the installation:
-        - personal screenshot removed for security purposes.
+        - **_personal screenshot removed for security purposes._**
       - Clean install:
         - **you get the idea, personal screenshot removed for security purposes.**
       - Success!
