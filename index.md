@@ -14,5 +14,5 @@ Here you'll find detailed documentation, code, and write-ups showcasing my work 
 - More coming soon!  
 
 ## Contact  
-- [LinkedIn](https://www.linkedin.com/in/yourprofile)  
-- [Email](mailto:youremail@example.com)  
+- [LinkedIn](https://www.linkedin.com/in/kollin-meadows/)  
+- [Email](kollin.meadows09@gmail.com)  
